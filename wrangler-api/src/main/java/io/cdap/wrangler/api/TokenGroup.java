@@ -58,4 +58,17 @@ public final class TokenGroup {
   public SourceInfo getSourceInfo() {
     return info;
   }
+
+  public void addToken(Token token) {
+    tokens.add(token);
+  }
+
+  public List<Token> getTokens() {
+    return tokens;
+  }
+
+  @Override
+  public String toString() {
+    return "TokenGroup{" + "tokens=" + tokens + '}';
+  }
 }
